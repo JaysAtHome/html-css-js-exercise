@@ -1,11 +1,232 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg text-uppercase">
+      <div class="container-fluid">
+        <a class="navbar-brand px-lg-4 rounded" href="#">MyPortfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link px-lg-4 rounded" href="#about">About</a>
+          <a class="nav-link px-lg-4 rounded" href="#projects">Projects</a>
+          <a class="nav-link px-lg-4 rounded" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Sections -->
+
+  <main class="pt-4">
+
+
+    <section id="about" class="mb-4">
+        <div class="container-lg section-1">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="images/meh.jpg" class="img-fluid rounded-circle" alt="Your Pic">
+                </div>
+                <div class="col-md-8">
+                  <h2><small>Hello, I'm</small></h2>
+                  <font size="40"><p><big>Jay Marlo Marmeto</big></p></font>
+                  <p class="fs-4"> How's it going bro? what do you think of my portfolio? Tried my best to understand how this works. 
+                    I'm glad bootstrap exists, it sure did make things easier!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+<hr>
+
+    <section id="projects">
+      <div class="container-lg section-2">
+          <h1 class="text-center pb-4 pt-4">Projects</h1>
+          <div class="row g-4">
+              <!-- Project 1 -->
+              <div class="col-md-4">
+                  <div class="card">
+                      <h4 class="card-title-overlay text-center pt-4">Project 1</h4>
+                      <img src="images/pr1-gym.jpg" class="card-img-top" alt="Project 1 Image">
+                      <div class="card-body">
+                          <p class="card-text">Project 1 - Gym</p>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                              data-bs-target="#project1Modal">
+                              More Details
+                          </button>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="col-md-4">
+                  <div class="card">
+                      <h4 class="card-title-overlay text-center pt-4">Project 2</h4>
+                      <img src="images/pr2-meal.jpg" class="card-img-top" alt="Project 2 Image">
+                      <div class="card-body">
+                          <p class="card-text">Project 2 - Meal Prep</p>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                              data-bs-target="#project2Modal">
+                              More Details
+                          </button>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="col-md-4">
+                  <div class="card">
+                      <h4 class="card-title-overlay text-center pt-4">Project 3</h4>
+                      <img src="images/pr3-programming.jpg" class="card-img-top" alt="Project 3 Image">
+                      <div class="card-body">
+                          <p class="card-text">Project 3 - Programming</p>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                              data-bs-target="#project3Modal">
+                              More Details
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Project 1 Modal -->
+      <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="project1ModalLabel">Project 1 - Gym</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    A facility equipped for physical exercise. A place where people go to improve their physical fitness, strength, and overall health. 
+                    They offer a variety of equipment, classes, and services to help individuals meet their fitness goals.
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Project 2 Modal -->
+      <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="project2ModalLabel">Project 2 - Meal Prep</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Meal prepping is the practice of preparing meals or components of meals in advance. This saves time, 
+                    reduce the stress of daily cooking, and maintain a healthy diet by having ready-to-eat, nutritious meals available.
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Project 3 Modal -->
+      <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="project3ModalLabel">Project 3 - Programming</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    often referred to as coding, is the process of creating instructions that a computer can follow to perform specific tasks. 
+                    These instructions are written in programming languages, which are designed to be understood by both humans and machines.
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <hr>
+
+  <section id="contact">
+      <div class="container-lg section-3 pt-4 pb-4">
+          <h1 class="text-center pb-4">Contact</h1>
+          <form class="row g-3" id="contactForm">
+              <div class="col-md-6">
+                  <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                  <span id="nameError"></span>
+              </div>
+              <div class="col-md-6">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+                  <span id="emailError"></span>
+              </div>
+              <div class="col-12">
+                  <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                  <span id="subjectError"></span>
+              </div>
+              <div class="col-12">
+                  <textarea class="form-control" id="inputMessage" rows="4" placeholder="Your Message"></textarea>
+                  <span id="messageError"></span>
+              </div>
+              <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+          </form>
+      </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="submissionModal" tabindex="-1" aria-labelledby="submissionModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="submissionModalLabel">Form Submitted</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  Your message has been sent successfully!
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+<hr>
+</main>
+<footer>
+  <div class="container">
+      <p class="text-center">&copy; 2024 JaysPortfolio</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  
+<script src="js/scripts.js"></script>
+
+<a class="top-link hide" href="" id="js-top">
+    <img src="images/arrow up.jpg" class="img-fluid rounded-circle" alt="Button" title="Back to top">
+  </a>
+
+</body>
+
 </html>
